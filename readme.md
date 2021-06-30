@@ -2,9 +2,9 @@
 
 This repo contains a bunch of shell scripts to aid on creating Smilo local networks for development proposes.
 
-## Download Smilo release:
+## Download the latest Smilo release:
 `
-./geth-config.sh v1.9.2.4
+./geth-config.sh v1.9.7.1
 `
 
 ## Download Blackbox release:
@@ -18,9 +18,24 @@ chmod +x ./chmod.sh; ./chmod.sh
 `
 
 
-## Start a network with defaults
+## Start a network from genesis with SmiloBFT and Blackbox (defaults) 
 `
 ./main.sh -i true
+`
+
+## Start a network from genesis with Tendermint DAO consensus (without blackbox)
+`
+./main.sh -i true -c tendermint-dao -p 0
+`
+
+## Start a network from genesis with Istanbul DAO consensus (without blackbox)
+`
+./main.sh -i true -c istanbul-dao -p 0
+`
+
+## Start a network from genesis with SmiloBFT DAO consensus (without blackbox)
+`
+./main.sh -i true -c istanbul-dao -p 0
 `
 
 ## Tail geth logs

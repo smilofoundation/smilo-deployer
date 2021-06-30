@@ -1,0 +1,84 @@
+{
+  "alloc": {
+    "8a936856d94e67e0cbaf63019e1e16e8920a897a": {
+      "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+    },
+    "100dbf09079e2e72124b646c1985f818d93ef336": {
+      "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+    },
+    "61826ff70eea69651c137c43e0d946c39271916d": {
+      "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+    },
+    "394e66cac836da45a796470a9825dc8bc1855abd": {
+      "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+    },
+    "dd7d067cbdb1a2098fa7080c7674bb136a99d516": {
+      "balance": "0x446c3b15f9926687d2c40534fdb564000000000000"
+    }
+  },
+  "coinbase": "0x0000000000000000000000000000000000000000",
+  "config": {
+    "byzantiumBlock": 0,
+    "eip150Block": 0,
+    "homesteadBlock": 0,
+    "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "petersburgBlock": 0,
+    "constantinopleBlock": 0,
+    "sportdao": {
+      "epoch": 30000,
+      "policy": 0
+    },
+    "isSmilo": true,
+    "isGas": true,
+    "isGasRefunded": true,
+    "chainId": 10,
+    "required_min_funds": 1,
+    "autonityContract": {
+      "bytecode": "",
+      "abi": "",
+      "minGasPrice": 0,
+      "operator": "0x850C1Eb8D190e05845ad7F84ac95a318C8AaB07f",
+      "users": [
+        {
+          "address": "0x8a936856d94e67e0cbaf63019e1e16e8920a897a",
+          "enode": "enode://764df6c754222b7c983119ae605c8dda286c09481e5abd19e96efb965c6d1246f6459662dc39225407cd88debc5480a36f2163141067c939fa156bc3c6e30fef@127.0.0.1:21000",
+          "type": "validator",
+          "stake": 1
+        },
+        {
+          "address": "0x100dbf09079e2e72124b646c1985f818d93ef336",
+          "enode": "enode://5507953c473ff533de1b6764ecb5764d30dfee6284d8a454cd52f3f5509939467d0682ea6603cbbe2acade888eb09c9bc29400c4b8cff1361f98da63f8d3941d@127.0.0.1:21001",
+          "type": "validator",
+          "stake": 1
+        },
+        {
+          "address": "0x61826ff70eea69651c137c43e0d946c39271916d",
+          "enode": "enode://734fc7caf9325fcc14ebf7f3776de8e418aaace792195dcc3e804193ae1b98650c50988867e274fa10a681f64e1fb00b0d874025d9ab9f2a8c5c5ff80ec13a39@127.0.0.1:21002",
+          "type": "validator",
+          "stake": 1
+        },
+        {
+          "address": "0x394e66cac836da45a796470a9825dc8bc1855abd",
+          "enode": "enode://92f843f2ea76500c74d7ac4ace510a804b1f53b23b8314b20db196e0a5e7efedb4e52a5b677b2aeeb34569443a595e99948d16350bbb188bd3908ea11a59825a@127.0.0.1:21003",
+          "type": "validator",
+          "stake": 1
+        },
+        {
+          "address": "0xdd7d067cbdb1a2098fa7080c7674bb136a99d516",
+          "enode": "enode://acd890cd42fe818f5fff662da25a32ae95b667489717aa35718dd9e4804cef0b62d074fd43212323d1e4ded3e396642274e4ee9163e4945efe33e1532695fc77@127.0.0.1:21004",
+          "type": "validator",
+          "stake": 1
+        }
+      ]
+    }
+  },
+  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f8aff869948a936856d94e67e0cbaf63019e1e16e8920a897a94100dbf09079e2e72124b646c1985f818d93ef3369461826ff70eea69651c137c43e0d946c39271916d94394e66cac836da45a796470a9825dc8bc1855abd94dd7d067cbdb1a2098fa7080c7674bb136a99d516b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0",
+  "gasLimit": "105000000",
+  "difficulty": "0x1",
+  "mixHash": "0x636861696e20706c6174666f726d2077697468206120636f6e736369656e6365",
+  "nonce": "0x0",
+  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "timestamp": "0x00"
+}

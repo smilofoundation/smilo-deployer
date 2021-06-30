@@ -2,7 +2,7 @@
 
 SCRIPT=$(basename ${BASH_SOURCE[0]})
 QTD=5
-CONSENSUS=
+CONSENSUS=smilobft
 GO_SMILO=v1.9.2.4
 BLACKBOX=v2.0.0
 BLACKBOX_QTD=5
@@ -45,14 +45,16 @@ set -euxo pipefail
 init_smilo_func() {
   echo "will init go-smilo node $i ..."
   rm -rf sdata/ss"$i"
+  rm -rf sdata/logs
   echo "[*] Configuring node $i"
   mkdir -p sdata/ss"$i"/{keystore,geth}
+  mkdir -p sdata/logs
   cp config/permissioned-nodes.json sdata/ss"$i"/static-nodes.json
   cp config/blacklisted-addresses.json sdata/ss"$i"/geth/blacklisted-addresses.json
   cp config/permissioned-nodes.json sdata/ss"$i"/
   cp keys/key"$i" sdata/ss"$i"/keystore
   cp nodekeys/nodekey"$i" sdata/ss"$i"/geth/nodekey
-  $gethCMD --datadir sdata/ss"$i" init genesis/"$CONSENSUS"smilo-genesis.json
+  $gethCMD --datadir sdata/ss"$i" init genesis/"$CONSENSUS"_smilo-genesis.json
 
   echo "init go-smilo node, done."
 }
@@ -132,7 +134,7 @@ EOF
 start_smilo_func() {
   echo "starting go-smilo node $i ..."
 #  bindTo=127.0.0.1
-  NETWORK_ID=$(cat ./genesis/smilo-genesis.json | grep chainId | awk -F " " '{print $2}' | awk -F "," '{print $1}')
+  NETWORK_ID=$(cat ./genesis/"$CONSENSUS"_smilo-genesis.json | grep chainId | awk -F " " '{print $2}' | awk -F "," '{print $1}')
   echo "[*] Starting Smilo nodes with ChainID and NetworkId of $NETWORK_ID"
   ARGS="--verbosity 4 --allow-insecure-unlock  --permissioned=false --smilobft.blockperiod 1 --smilobft.requesttimeout 10000 --syncmode full --mine --miner.gasprice 1 --miner.threads 1 --rpc --rpcaddr 127.0.0.1 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,smilobft,sport --rpccorsdomain \"*\" --ws --wsaddr 127.0.0.1 --wsorigins '*' --wsapi personal,admin,db,eth,net,web3,miner,shh,txpool,debug"
 
