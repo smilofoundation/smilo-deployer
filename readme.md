@@ -14,8 +14,7 @@ This repo contains a bunch of shell scripts to aid on creating Smilo local netwo
 
 ## Fix permissions
 `
-chmod +x ./chmod.sh
-./chmod.sh
+chmod +x ./chmod.sh; ./chmod.sh
 `
 
 

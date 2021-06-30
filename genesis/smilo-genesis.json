@@ -18,13 +18,14 @@
   },
   "coinbase": "0x0000000000000000000000000000000000000000",
   "config": {
-    "byzantiumBlock": 1,
-    "eip150Block": 2,
+    "byzantiumBlock": 0,
+    "eip150Block": 0,
+    "homesteadBlock": 0,
     "eip150Hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "eip155Block": 0,
-    "eip158Block": 3,
-    "petersburgBlock": 4,
-    "constantinopleBlock": 5,
+    "eip158Block": 0,
+    "petersburgBlock": 0,
+    "constantinopleBlock": 0,
     "sport": {
       "epoch": 30000,
       "policy": 0
