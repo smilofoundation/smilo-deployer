@@ -52,7 +52,7 @@ init_smilo_func() {
   cp config/permissioned-nodes.json sdata/ss"$i"/
   cp keys/key"$i" sdata/ss"$i"/keystore
   cp nodekeys/nodekey"$i" sdata/ss"$i"/geth/nodekey
-  geth --datadir sdata/ss"$i" init genesis/"$CONSENSUS"smilo-genesis.json
+  $gethCMD --datadir sdata/ss"$i" init genesis/"$CONSENSUS"smilo-genesis.json
 
   echo "init go-smilo node, done."
 }
