@@ -28,7 +28,8 @@
     "constantinopleBlock": 0,
     "sportdao": {
       "epoch": 30000,
-      "policy": 0
+      "policy": 0,
+      "minfunds": 10000
     },
     "isSmilo": true,
     "isGas": true,

@@ -35,7 +35,7 @@ chmod +x ./chmod.sh; ./chmod.sh
 
 ## Start a network from genesis with SmiloBFT DAO consensus (without blackbox)
 `
-./main.sh -i true -c istanbul-dao -p 0
+./main.sh -i true -c smilobft-dao -p 0
 `
 
 ## Tail geth logs
